@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>VKC Parivar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- jvectormap -->
+        <!-- Plugins css -->
+        <link href="../plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/huebee/huebee.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+        <link href="../plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
+         <!-- DataTables -->
+         <link href="../plugins/datatables/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+         <link href="../plugins/datatables/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+         <!-- Responsive datatable examples -->
+         <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/git_style.css" rel="stylesheet" type="text/css" />
+        
+
+    </head>
+       
+       <style>
+           .left-sidenav .brand .logo .logo-lg {height: 55px;}
+       </style>
+      
+    <body class="">
+        <!-- Left Sidenav -->
+        <div class="left-sidenav">
+            <!-- LOGO -->
+            <div class="brand">
+                <a href="index.html" class="logo">
+                    
+                    <span>
+                        <img src="assets/images/vkc-parivar-logo.png" alt="logo-large" class="logo-lg logo-light">
+                        <img src="assets/images/vkc-parivar-logo.png" alt="logo-large" class="logo-lg logo-dark">
+                    </span>
+                </a>
+            </div>
+            <!--end logo-->
+            <div class="menu-content h-100" data-simplebar>
+                <ul class="metismenu left-sidenav-menu">
+                    <li class="menu-label mt-0">Main</li>
+                    <li>
+                        <a href="dashboard.html"> <i data-feather="home" class="align-self-center menu-icon"></i>
+                            <span>Dashboard</span><span class="menu-arrow"> </span></a>
+                         
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="box" class="align-self-center menu-icon"></i><span>Explore By Brand</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="brand.html"><i class="ti-control-record"></i>VKC Pride</a></li>
+                             
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>Explore By Type</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="brand.html"><i class="ti-control-record"></i>Belly Shoes</a></li>
+                             
+                        </ul>
+                    </li>
+
+
+    
+                    <li>
+                        <a href="brand.html"><i data-feather="grid" class="align-self-center menu-icon"></i>
+                            <span>Trending Products</span><span class="menu-arrow"> </span></a>
+                      
+                    </li> 
+    
+                    <li>
+                        <a href="brand.html"><i data-feather="lock" class="align-self-center menu-icon"></i><span>New Arrival</span><span class="menu-arrow"> </span></a>
+                         
+                    </li> 
+                    <li>
+                        <a href="brand.html">
+                            <i data-feather="lock" class="align-self-center menu-icon"></i><span>Festive Collections</span><span class="menu-arrow"> </span></a>
+                         
+                    </li>
+                    <li>
+                        <a href="brand.html">
+                            <i data-feather="heart" class="align-self-center menu-icon"></i><span>My Favourite Products</span><span class="menu-arrow"> </span></a>
+                         
+                    </li>
+
+                    <li>
+                        <a href="catalog_download.html">
+                            <i data-feather="download" class="align-self-center menu-icon"></i><span>Catalog Downloads</span><span class="menu-arrow"> </span></a>
+                         
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>My Dealers</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href=""><i class="ti-control-record"></i>V4U Distributors (KNR)</a></li>
+                             
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>Manage Employees</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="add_employee.html"><i class="ti-control-record"></i>Add Employee</a></li>
+                            <li class="nav-item"><a class="nav-link" href="view_employee.html"><i class="ti-control-record"></i>View Employee</a></li>
+                             
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>Orders</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="order_view.html"><i class="ti-control-record"></i>Order List</a></li>
+                            <li class="nav-item"><a class="nav-link" href="order_history.html"><i class="ti-control-record"></i>Order History</a></li>
+                             
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>VKC Incentive Scheme</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="scheme.html"><i class="ti-control-record"></i>Dashboard</a></li>
+                             
+                             
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="feed_back.html">
+                            <i data-feather="heart" class="align-self-center menu-icon"></i><span>Feed Back</span><span class="menu-arrow"> </span></a>
+                         
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);"> <i data-feather="package" class="align-self-center menu-icon"></i><span>My Profile</span><span class="menu-arrow">
+                            <i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="view_profile.html"><i class="ti-control-record"></i>View Profile</a></li>
+                             
+                             
+                        </ul>
+                    </li>
+
+                    <hr class="hr-dashed hr-menu">
+                    <li class="menu-label my-2"></li>
+    
+                            
+                </ul>
+    
+                 
+            </div>
+        </div>
+        <!-- end left-sidenav-->
+        
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                    <ul class="list-unstyled topbar-nav float-end mb-0">  
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-end dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Type text...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>                      
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge bg-danger rounded-pill noti-icon-badge">2</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-lg pt-0">
+                            
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Notifications <span class="badge bg-primary rounded-pill">2</span>
+                                </h6> 
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">2 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="shopping-cart" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">10 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">40 min ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">                                                    
+                                                <i data-feather="users" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">1 hr ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <img src="assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                                <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                                <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ms-1 nav-user-name hidden-sm">Jhon Retailer11</span>
+                                <img src="assets/images/users/user-5.jpg" alt="profile-user" class="rounded-circle thumb-xs" />                                 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="profile.html"><i data-feather="user" class="align-self-center icon-xs icon-dual me-1"></i> Profile</a>
+                                <a class="dropdown-item" href="setting.html"><i data-feather="settings" class="align-self-center icon-xs icon-dual me-1"></i> Settings</a>
+                                <a class="dropdown-item" href="change_password.html"><i data-feather="lock" class="align-self-center icon-xs icon-dual me-1"></i> Change Password</a>
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+        
+                    <ul class="list-unstyled topbar-nav mb-0">                        
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li> 
+                        <li class="creat-btn">
+                            <div class="nav-link">
+                                <!-- <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus me-2"></i> </a> -->
+                            </div>                                
+                        </li>                           
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Cholan Shoe Mart</h4>
+                                        <ol class="breadcrumb">
+                                          
+                                            
+                                        </ol>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <a href="reward_scheme.html" class="btn btn-outline-primary tippy-btn" data-tippy-animation="shift-away" data-tippy-arrow="true" data-tippy="" data-original-title="Add Employee"><i class="fas fa-angle-left"></i> Back</a>
+                                    </div><!--end col-->  
+                                </div><!--end row-->                                                              
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    
+                        <style>
+                            .coupon_count {
+                                position: absolute;
+                                right: 0;
+                                background: #000;
+                                border-radius:10px 0 0 10px;
+                                padding:4px 10px;
+                                color: #fff;
+                                background-image: linear-gradient(to left, #d1b000, #d9b700, #e2be00, #eac600, #f3cd00, #f7d213, #fbd61f, #ffdb28, #ffde38, #ffe045, #ffe351, #ffe55c);
+                                background-size: 400% 400%;
+                                animation:  cc 4s ease infinite;
+                                
+                            }
+
+                            @keyframes cc {
+                                    0% {
+                                        background-position: 0% 50%;
+                                    }
+                                    50% {
+                                        background-position: 100% 50%;
+                                    }
+                                    100% {
+                                        background-position: 0% 50%;
+                                    }
+                            }
+
+
+
+                        </style>
+                    
+
+                    
+
+                    <!-- end page title end breadcrumb -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">                      
+                                    <h4 class="card-title">Gift List</h4>                      
+                                </div><!--end col-->
+                           
+                            </div>  <!--end row-->                                  
+                        </div><!--end card-header-->  
+                        <div class="card-body bootstrap-select-1">
+                            
+                            <div class="row">
+                                
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body item_card">
+                                                
+                                           <a href="">
+                                               <span class="coupon_count"> 20 Coupons</span>
+                                            <img src="data:image/jpeg;base64,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BERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERED/2Q==" alt="" class="d-block img-fluid" height=" "></a>
+                                            <div class="row my-4">
+                                                <div class="col">
+                                                    
+                                                    <a href="#" class="title-text d-block">Milton Elegance Crown Stool Big</a>
+                                                    
+                                                </div>
+                                                   
+                                            </div> 
+                                            <a href=" " class="btn btn-soft-danger w-100">Claim Now</a>      
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body item_card">
+                                            
+                                                      
+                                           <a href="">
+                                            <span class="coupon_count"> 20 Coupons</span>
+                                            <img src="https://m.media-amazon.com/images/I/61NUmFFLe0S._SL1500_.jpg" alt="" class="d-block img-fluid" height=" "></a>
+                                            <div class="row my-4">
+                                                <div class="col">
+                                                    
+                                                    <a href="#" class="title-text d-block">Borosil 10 Pc Dinner Set</a>
+                                                    
+                                                </div>
+                                                    
+                                            </div> 
+                                            <a href=" " class="btn btn-soft-danger w-100">Claim Now</a>      
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div>
+
+
+                                
+
+
+                            </div><!-- end row --> 
+                        </div><!-- end card-body --> 
+                    </div> <!-- end card -->   
+                  
+
+                     
+                   
+
+                </div><!-- container -->
+
+                <footer class="footer text-center text-sm-start">
+                    &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script> VKC Parivar <span class="text-muted d-none d-sm-inline-block float-end">Powered by <a href=""> GIT - Global Innovative Technologiess  </a></span>
+                </footer><!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metismenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/feather.min.js"></script>
+        <script src="assets/js/simplebar.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+
+        <script src="../plugins/apex-charts/apexcharts.min.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="../plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
+        <script src="assets/pages/jquery.analytics_dashboard.init.js"></script>
+
+
+        <!-- Required datatable js -->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap5.min.js"></script>
+
+        <!-- Plugins js -->
+      
+        <script src="../plugins/select2/select2.min.js"></script>
+        <script src="../plugins/huebee/huebee.pkgd.min.js"></script>
+        <script src="../plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+        <script src="../plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="../plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+
+        <script src="assets/pages/jquery.forms-advanced.js"></script>
+
+
+        <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="assets/pages/jquery.datatable.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        
+    </body>
+
+</html>
