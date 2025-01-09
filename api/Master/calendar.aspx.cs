@@ -23,42 +23,42 @@ public partial class api_catlog_add_wishlist : System.Web.UI.Page
 
         insert();
     }
-    public void chk_tocken()
-    {
-        CommFuncs CommFuncs = new CommFuncs();
+    //public void chk_tocken()
+    //{
+    //    CommFuncs CommFuncs = new CommFuncs();
 
-        string id = "";
-        if (Request.Headers["Authorization"] != null)
-        {
-            id = CommFuncs.get_tocken_details(Request.Headers["Authorization"].ToString().Replace("Bearer ", ""));
-        }
+    //    string id = "";
+    //    if (Request.Headers["Authorization"] != null)
+    //    {
+    //        id = CommFuncs.get_tocken_details(Request.Headers["Authorization"].ToString().Replace("Bearer ", ""));
+    //    }
 
 
-        if (id == "Oops! Tocken Expired!")
-        {
-            json = "{'status':false,'Message' :'Oops! Tocken Expired!'}";
-            json = json.Replace("'", "\"");
-            Response.ContentType = "application/json";
-            Response.StatusCode = 403;
-            Response.Write(json);
-            Response.End();
-            return;
-        }
-        else if (id != "")
-        {
+    //    if (id == "Oops! Tocken Expired!")
+    //    {
+    //        json = "{'status':false,'Message' :'Oops! Tocken Expired!'}";
+    //        json = json.Replace("'", "\"");
+    //        Response.ContentType = "application/json";
+    //        Response.StatusCode = 403;
+    //        Response.Write(json);
+    //        Response.End();
+    //        return;
+    //    }
+    //    else if (id != "")
+    //    {
 
-        }
-        else
-        {
-            json = "{'status':false,'Message' :'Oops! Unauthorised Access!'}";
-            json = json.Replace("'", "\"");
-            Response.ContentType = "application/json";
-            Response.StatusCode = 403;
-            Response.Write(json);
-            Response.End();
-            return;
-        }
-    }
+    //    }
+    //    else
+    //    {
+    //        json = "{'status':false,'Message' :'Oops! Unauthorised Access!'}";
+    //        json = json.Replace("'", "\"");
+    //        Response.ContentType = "application/json";
+    //        Response.StatusCode = 403;
+    //        Response.Write(json);
+    //        Response.End();
+    //        return;
+    //    }
+    //}
 
     public class DataResponse
     {
